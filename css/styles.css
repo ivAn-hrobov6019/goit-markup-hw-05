@@ -790,7 +790,7 @@ textarea.form-input {
   white-space: nowrap;
 }
 
-.form-label-checkbox .form-input[type="checkbox"] {
+.form-label.form-label-checkbox .form-input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
@@ -798,16 +798,21 @@ textarea.form-input {
 
 .form-label.form-label-checkbox {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 8px;
-  flex-wrap: nowrap;
   margin: 16px 24px 24px;
-  padding-bottom: 0;
 }
 
 .form-label.form-label-checkbox .checkbox-text {
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .checkbox-box {
@@ -831,14 +836,17 @@ textarea.form-input {
   opacity: 0;
 }
 
-.form-label-checkbox .form-input[type="checkbox"]:checked + .checkbox-box {
+.form-label.form-label-checkbox
+  .form-input[type="checkbox"]:checked
+  + .checkbox-text
+  .checkbox-box {
   background-color: #404bbf;
   border-color: #404bbf;
 }
 
-.form-label-checkbox
+.form-label.form-label-checkbox
   .form-input[type="checkbox"]:checked
-  + .checkbox-box
+  + .checkbox-text
   .checkbox-icon {
   opacity: 1;
 }

@@ -682,6 +682,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 24px;
+  padding-top: 72px;
 }
 
 .modal-close-btn {
@@ -724,14 +725,17 @@ header {
 }
 
 .modal-text {
-  margin-top: 48px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+}
+
+.label-text-name {
+  margin-top: 0;
 }
 
 .form-label {
@@ -801,9 +805,8 @@ textarea.form-input {
 /* ===== CHECKBOX  ===== */
 .form-label-checkbox {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 16px 24px 24px;
+
+  margin: 16px 0 24px 0;
   padding-bottom: 0;
   cursor: pointer;
   flex-wrap: nowrap;
@@ -818,15 +821,12 @@ textarea.form-input {
 
 .form-label.form-label-checkbox {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 16px 24px 24px;
 }
 
 .form-label.form-label-checkbox .checkbox-text {
   display: flex;
   align-items: center;
-  gap: 8px;
+
   cursor: pointer;
   font-weight: 400;
   font-size: 12px;
@@ -836,6 +836,7 @@ textarea.form-input {
 }
 
 .checkbox-box {
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   flex: 0 0 16px;
@@ -883,6 +884,7 @@ textarea.form-input {
 }
 
 .privacy-policy {
+  margin-left: 3px;
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -890,12 +892,6 @@ textarea.form-input {
 }
 
 .btn-send {
-  position: absolute;
-  left: 119px;
-  bottom: 24px;
-
-  margin-top: 24px;
-
   width: 169px;
   height: 56px;
 
@@ -908,6 +904,10 @@ textarea.form-input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.send-wrap {
+  display: flex;
+  justify-content: center;
+}
 .btn-send-text {
   font-weight: 500;
   font-size: 16px;

@@ -771,6 +771,10 @@ header {
 
 .form-input.textarea,
 textarea.form-input {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
   height: 120px;
   resize: none;
   padding: 8px 16px;
@@ -811,7 +815,6 @@ textarea.form-input {
   padding-bottom: 0;
   cursor: pointer;
   flex-wrap: nowrap;
-  white-space: nowrap;
 }
 
 .form-label.form-label-checkbox .form-input[type="checkbox"] {
@@ -881,7 +884,6 @@ textarea.form-input {
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  white-space: nowrap;
 }
 
 .privacy-policy {

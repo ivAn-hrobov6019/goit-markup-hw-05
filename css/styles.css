@@ -554,7 +554,7 @@ header {
 }
 
 .footer-input {
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
   font-weight: 400;
@@ -578,7 +578,7 @@ header {
 }
 
 .footer-input::placeholder {
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
   font-weight: 400;
@@ -709,7 +709,7 @@ header {
   display: block;
   fill: #2e2f42;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -774,6 +774,7 @@ textarea.form-input {
   height: 120px;
   resize: none;
   padding: 8px 16px;
+  margin-top: 4px;
 }
 
 .form-input:not([type="checkbox"])::placeholder {
@@ -830,9 +831,9 @@ textarea.form-input {
   cursor: pointer;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
 }
 
 .checkbox-box {
@@ -877,9 +878,9 @@ textarea.form-input {
 .checkbox-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
   white-space: nowrap;
 }
 

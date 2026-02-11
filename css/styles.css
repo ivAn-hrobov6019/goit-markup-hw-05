@@ -667,6 +667,7 @@ header {
     0 2px 1px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 
 .modal-close-btn {
@@ -707,7 +708,8 @@ header {
 }
 
 .modal-text {
-  margin: 72px 24px 8px;
+  margin-top: 48px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -719,7 +721,6 @@ header {
 .form-label {
   display: flex;
   flex-direction: column;
-  margin: 0 24px;
 }
 
 .label-text {
@@ -871,9 +872,15 @@ textarea.form-input {
 }
 
 .btn-send {
+  position: absolute;
+  left: 119px;
+  bottom: 24px;
+
+  margin-top: 24px;
+
   width: 169px;
   height: 56px;
-  margin: 0 auto 24px;
+
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
